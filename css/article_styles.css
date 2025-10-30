@@ -1,0 +1,140 @@
+/* ================================
+   Global Styles
+================================ */
+body {
+    background-color: #f3dfc1;
+    color: #333330;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', 'Baskerville', Georgia, 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   Main Article Container
+================================ */
+.main-container {
+    background: #f3dfc1;
+    border-radius: 10px;
+    margin: 120px auto 60px;
+    padding: 60px 50px;
+    max-width: 1100px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================
+   Headings
+================================ */
+.main-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333330;
+    margin-bottom: 0.5rem;
+}
+
+.main-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #494747;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-container h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #494747;
+    margin-bottom: 0.75rem;
+}
+
+/* ================================
+   Paragraphs and Text
+================================ */
+.main-container p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+    color: #333330;
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+    text-align: justify;
+}
+
+.main-container ul {
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+    padding-left: 2rem;
+    line-height: 1.7;
+    color: #333330;
+}
+
+/* ================================
+   Layout
+================================ */
+.two-column-layout {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+}
+
+.overview-full {
+    background: #f3dfc1;
+    border-left: 6px solid #494747;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+/* ================================
+   Responsive
+================================ */
+@media screen and (max-width: 900px) {
+    .two-column-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-container {
+        padding: 40px 25px;
+    }
+
+    .main-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-container p {
+        font-size: 1rem;
+    }
+}
+
+/* ================================
+   Divider
+================================ */
+hr {
+    border: none;
+    border-top: 2px solid #494747;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+/* ================================
+   Back Link or Buttons (optional)
+================================ */
+a.card__link, .back-link {
+    display: inline-block;
+    background: #494747;
+    color: #f3dfc1;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+a.card__link:hover, .back-link:hover {
+    background: #5c5959;
+    color: #ece9e2;
+}
